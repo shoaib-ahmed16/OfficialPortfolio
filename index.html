@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shoaib's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/qualification.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -31,6 +32,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
   </head>
   <body>
     <div class="scroll-up-btn">
@@ -44,6 +46,7 @@
         <ul class="menu">
           <li><a href="#home" class="menu-btn">Home</a></li>
           <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#qualification" class="menu-btn">Qualification</a></li>
           <li><a href="#services" class="menu-btn">Skills</a></li>
           <li><a href="#teams" class="menu-btn">Projects</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -111,6 +114,119 @@
       </div>
     </section>
 
+<!-- =============Qualification Section ============= -->
+<section id="qualification" class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Personal Journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active data-target='#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!-- =============Qualification Content 1============= -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- =============Qualification 1============= -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Full Stack Developer</h3>
+                  <span class="qualification__subtitle">Masai School</span>
+                  <span class="qualification__subtitle">Bangalore</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    Oct 2021 - present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- =============Qualification 2============= -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Electrical Enginner
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Tehri hydro development corporation Institute of Hydropower Engineering and Technology, Tehri, Uttarakhand.</span
+                  >
+                  <span class="qualification__subtitle"
+                    >New Tehri- Uttarakhand</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    September 2015 - May 2019
+                  </div>
+                </div>
+              </div>
+              <!-- =============Qualification 3============= -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Intermediate (PCM)</h3>
+                  <span class="qualification__subtitle">Guru Nanak Mission Public School</span>
+                  <span class="qualification__subtitle">Paonta Sahib,Sirmour(H.P)</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    June 2013 - May 2015
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- =============Qualification 4============= -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Matriculation
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Johnson Secondary School, Herbertpur, Uttarakhand</span
+                  >
+                  <span class="qualification__subtitle"
+                    >Herbertpur Dehradun</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    April 2002 - May 2013
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- services section start -->
     <section class="services" id="services">
       <div class="max-width">
@@ -150,7 +266,6 @@
               <a href="https://nodejs.org/en/">
                  <img src="./background/nodejs3.png" />
               </a>
-             
             </div>
           </div>
         </div>
@@ -517,10 +632,11 @@
               </div>
             </div>
           </div>
+          
           <div class="column right">
             <div class="text">Message me</div>
-            <form class="contact-form" action="#" method="POST">
-              <!-- Name and Contact Number Html -->
+            <!---<form class="contact-form" action="#" method="POST">
+              Name and Contact Number Html
               <div class="fields">
                 <div class="field name">
                   <input
@@ -539,8 +655,8 @@
                   />
                 </div>
               </div>
-              <!-- Name and Contact Number block Html -->
-              <!-- Email and sublect -->
+              Name and Contact Number block Html
+              Email and sublect
               <div class="field">
                 <input
                   type="text"
@@ -557,8 +673,8 @@
                   placeholder="Subject"
                 />
               </div>
-              <!-- Email and sublect -->
-              <!-- Field area -->
+              Email and sublect
+              Field area
 
               <div class="field textarea">
                 <textarea
@@ -569,13 +685,37 @@
                   placeholder="Message.."
                 ></textarea>
               </div>
-              <!-- Field area -->
+              Field area
               <div class="button-area">
                 <button id="textMe" class="send-msg" type="submit" name="send">
                   Send message
                 </button>
               </div>
-            </form>
+            </form> --->
+            <form id="form" action="" class="contact__form grid">
+            <label class="contact__inputs grid">
+              <label class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input id="form_name" type="text" class="contact__input" />
+              </label>
+              <label class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input id="form_email" type="email" class="contact__input" />
+              </label>
+              <label class="contact__content">
+                <label for="" class="contact__label">Subject</label>
+                <input id="subject_mail" type="text" class="contact__input" />
+              </label>
+              <label class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea id="message_text" name="" id="" cols="" rows="4" class="contact__input">
+                </textarea>
+              </label>
+              <label id="send_message_click">
+                  <input id="submit_message" type="submit" placeholder="Send Message" value="Send Message">
+              </label>
+            </label>
+          </form> 
           </div>
         </div>
       </div>
