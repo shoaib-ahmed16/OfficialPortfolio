@@ -176,10 +176,22 @@ section .title::after {
 /* title */
 
 /* home section styling */
-.home {
+.home_back {
   display: flex;
-  background: url('./background/map.jpg') no-repeat center;
+  background: url('../background/map.jpg') no-repeat center;
+  opacity: 0.5;
   height: 100vh;
+  color: whitesmoke;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home {
+  z-index: 10;
+  position: absolute;
+  height: 100vh;
+  margin-top: -90vh;
   color: whitesmoke;
   min-height: 500px;
   background-size: cover;
