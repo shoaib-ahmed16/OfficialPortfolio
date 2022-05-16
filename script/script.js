@@ -37,8 +37,8 @@ $(document).ready(function () {
   var typed = new Typed('.typing', {
     //strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
     strings: [
-      'Software Engineer',
-      'Full-Stack Developer',
+      'Software Development Engineer',
+      'Java Full-Stack Developer',
       'Backend Engineer',
       'Front-end Engineer',
     ],
