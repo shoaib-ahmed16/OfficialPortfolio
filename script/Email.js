@@ -11,7 +11,7 @@
       let dataString = JSON.stringify(data)
       console.log(dataString, typeof dataString)
 
-      let res = await fetch('https://shoaibsmtp.herokuapp.com/email', {
+      let res = await fetch('https://shoaibsmtp.herokuapp.com/email/', {
         mode: 'no-cors',
         method: 'POST',
         body: dataString,
