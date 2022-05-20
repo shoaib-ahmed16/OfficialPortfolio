@@ -2,12 +2,12 @@
   document.getElementById('form').addEventListener('submit', async (e) => {
     e.preventDefault()
     try {
-      let data = `{
-      'name': ${document.getElementById('form_name').value},
-      'email': ${document.getElementById('form_email').value},
-      'subject': ${document.getElementById('subject_mail').value},
-      'text': ${document.getElementById('message_text').value}
-    }`
+      let data = {
+      'name': `${document.getElementById('form_name').value}`,
+      'email': `${document.getElementById('form_email').value}`,
+      'subject':`${document.getElementById('subject_mail').value}`,
+      'text': `${document.getElementById('message_text').value}`
+    }
       console.log(data)
       let res = await fetch('https://shoaibsmtp.herokuapp.com/email', {
         mode: 'no-cors',
