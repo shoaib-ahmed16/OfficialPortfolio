@@ -3,20 +3,20 @@
     e.preventDefault()
     try {
       let data = {
-      name:document.getElementById('form_name').value,
-      email:document.getElementById('form_email').value,
-      subject:document.getElementById('subject_mail').value,
-      text: document.getElementById('message_text').value
+      name:document.querySelector('#form_name').value,
+      email:document.querySelector('#form_email').value,
+      subject:document.querySelector('#subject_mail').value,
+      text: document.querySelector('#message_text').value
     }
       console.log(data)
       let datajson =JSON.stringify(data);
       console.log(datajson)
-      let res = await fetch("https://shoaibsmtp.herokuapp.com/email", {
-        mode: "no-cors",
-        method: "POST",
-        body: datajson,
-        headers: {
-          "content-Type": "application/json",
+      let res = await fetch("https://shoaibsmtp.herokuapp.com/email",{
+        mode:"no-cors",
+        method:"POST",
+        body:datajson,
+        headers:{
+          "Content-Type": "application/json",
         }
       })
       let data1 = await res.json()
