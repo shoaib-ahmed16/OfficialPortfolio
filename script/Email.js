@@ -9,10 +9,12 @@
       text: document.getElementById('message_text').value
     }
       console.log(data)
+      let datajson =JSON.stringify(data);
+      console.log(datajson)
       let res = await fetch("https://shoaibsmtp.herokuapp.com/email", {
         mode: "no-cors",
         method: "POST",
-        body: data,
+        body: datajson,
         headers: {
           "content-Type": "application/json",
         }
