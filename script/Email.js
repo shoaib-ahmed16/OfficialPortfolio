@@ -19,7 +19,7 @@
       //     console.log(result);
       //   }
       // })
-      let res = await fetch("http://localhost:3000/email",{
+      let res = await fetch("https://shoaibsmtp.herokuapp.com/email",{
         method:"POST",
         body:datajson,
         headers:{
