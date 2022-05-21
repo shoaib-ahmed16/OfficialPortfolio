@@ -8,9 +8,9 @@
         subject:document.querySelector('#subject_mail').value,
         text: document.querySelector('#message_text').value
     }
-      console.log(data)
+      // console.log(data)
       let datajson =JSON.stringify(data);
-      console.log(datajson)
+      // console.log(datajson)
       // $.ajax({
       //   method: "POST",
       //   url: "https://shoaibsmtp.herokuapp.com/email",
@@ -26,7 +26,10 @@
           "Content-Type": "application/json",
         }
       }).then((res) => {
-        console.log(res.status);
+        setTimeout(() => {
+          alert("Email Sent to Shoaib Ahmed");
+        }, 1000);
+        
       })
       // let data1 = await res.json()
       // console.log({ data: data1 })
