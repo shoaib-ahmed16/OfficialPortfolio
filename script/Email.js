@@ -29,7 +29,15 @@
       }).then((res) => {
         setTimeout(() => {
           alert("Email Sent to Shoaib Ahmed");
-        }, 1000);
+        }, 200);
+
+          reloadpage()
+          function reloadpage(){
+            window.scrollTo(0, 0);
+            setTimeout(() => {
+            window.location.reload(true);
+            },1000)
+         }
         
       })
       // let data1 = await res.json()
