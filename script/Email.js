@@ -5,6 +5,7 @@
       let data = {
         name:document.querySelector('#form_name').value,
         email:document.querySelector('#form_email').value,
+        contact:document.querySelector('#form_number').value,
         subject:document.querySelector('#subject_mail').value,
         text: document.querySelector('#message_text').value
     }
