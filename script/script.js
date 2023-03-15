@@ -56,23 +56,33 @@ $(document).ready(function () {
 
   // owl carousel script
   $('.carousel').owlCarousel({
+    items:5,
     margin: 20,
     loop: true,
-    autoplayTimeOut: 2000,
+    autoplay:true,
+    autoplayTimeOut: 3600,
     autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
         nav: false,
       },
-      600: {
+      620: {
         items: 2,
         nav: false,
       },
-      1000: {
+      1040: {
         items: 3,
         nav: false,
       },
+      1460: {
+        items: 4,
+        nav: false,
+      },
+      1880: {
+        items: 5,
+        nav: false,
+      }
     },
   })
 })
