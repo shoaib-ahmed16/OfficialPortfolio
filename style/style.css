@@ -40,6 +40,7 @@ section {
 .skills,
 .teams,
 .contact,
+.github
 footer {
   font-family: 'Poppins', sans-serif;
 }
@@ -310,6 +311,10 @@ section .title::after {
 .services .title::after {
   background-color: LightSteelBlue;
   content: 'Check My Skills';
+}
+.github .title::after{
+  background-color: LightSteelBlue;
+  content: 'Check My GitHub';
 }
 /* .teams .title::after{
     background: whitesmoke;   
@@ -757,3 +762,4 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
